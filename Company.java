@@ -22,15 +22,13 @@ public class Company {
             credit += Math.abs(amount);
         }
     }
-    int applyDeals(Deal[] deals) {
-
-    }
-
+    
     void payTaxes() {
         int tax = taxSystem.calcTaxFor(debit, credit);
         System.out.printf("Компания %s уплатила налог в размере: %d руб.\n",title,tax);
-        debit=0;
-        credit=0;
+        debit = 0;
+        credit = 0;
 
     }
 }
+
